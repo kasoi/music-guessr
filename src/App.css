@@ -6,7 +6,6 @@
 
 .header {
   font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;

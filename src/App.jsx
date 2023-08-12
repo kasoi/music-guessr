@@ -116,8 +116,31 @@ function App() {
     audio.addEventListener('loadedmetadata', handleAudioMetadata);
   });
 
+  const [paddingTop, setPaddingTop] = useState('20vh');
+
+  useEffect(() => {
+      function adjustPaddingOnZoom() {
+          const zoomLevel = window.devicePixelRatio;
+
+          const ratio = zoomLevel > 1 ? 1 / zoomLevel : 1;
+          const vhValue = `${20 * (ratio)}vh`;
+          console.log('vh value is:', vhValue);
+          
+          setPaddingTop(vhValue);
+      }
+
+      adjustPaddingOnZoom();  // Initial adjustment
+      window.addEventListener('resize', adjustPaddingOnZoom);
+
+      // Cleanup listener on component unmount
+      return () => {
+          window.removeEventListener('resize', adjustPaddingOnZoom);
+      };
+  }, []);  // Empty dependency array ensures this effect runs once on mount and cleanup on unmount
+
   return (
     <div className="App">
+      <div style={{ paddingTop: paddingTop }} />
       <div className='header'>Track guessr</div>
       <div className='content'>
         {(isFirstRun || showTitle) && <Button onClick={getNextTrack} className="nextTrack">Next track</Button>}
