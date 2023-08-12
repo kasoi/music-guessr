@@ -1193,6 +1193,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
   integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
 
+"@discordapp/perceptual@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@discordapp/perceptual/-/perceptual-1.1.0.tgz#aba6e952e587945c0046c329ca4bbaf22981beb1"
+  integrity sha512-bww5JBGHajviO1iaore538+onzxpYq7uMUBpMUy2gOlCYl05XZiHJr+wSfiy6umM4RVG6FvmEiCZJif5WnoKeg==
+
 "@emotion/babel-plugin@^11.10.0":
   version "11.10.2"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.10.2.tgz#879db80ba622b3f6076917a1e6f648b1c7d008c7"
@@ -1658,6 +1663,13 @@
   version "5.10.9"
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.10.9.tgz#0279aaeecd7903c91730258b242aba4cf674fde5"
   integrity sha512-rqoFu4qww6KJBbXYhyRd9YXjwBHa3ylnBPSWbGf1bdfG0AYMKmVzg8zxkWvxAWOp97kvx3M2kNPb0xMIDZiogQ==
+
+"@mui/icons-material@^5.10.9":
+  version "5.10.9"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.10.9.tgz#f9522c49797caf30146acc576e37ecb4f95bbc38"
+  integrity sha512-sqClXdEM39WKQJOQ0ZCPTptaZgqwibhj2EFV9N0v7BU1PO8y4OcX/a2wIQHn4fNuDjIZktJIBrmU23h7aqlGgg==
+  dependencies:
+    "@babel/runtime" "^7.19.0"
 
 "@mui/material@^5.10.9":
   version "5.10.9"
